@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="gradebook">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="screen">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="print">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.min.css" type="text/css">
+    <link rel="stylesheet" href="trafficlight.css" type="text/css">
+    <title>Traffic Light State Machine</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="state text-center border-bottom">Navajo Road / Park Ridge Blvd Traffic Light State Machine</div>
+      <div class="state">
+        <span>Current state: </span>
+        <span class="current-state"></span>
+        <button class="btn btn-primary">Next state</button>
+      </div>
+      <table class="table table-condensed">
+        <tr>
+          <th colspan="4" class="text-center border-right">Navajo Rd</th>
+          <th colspan="4" class="text-center">Park Ridge Blvd</th>
+        </tr>
+        <tr>
+          <th colspan="2" class="text-center border-right">East</th>
+          <th colspan="2" class="text-center border-right">West</th>
+          <th colspan="2" class="text-center border-right">North</th>
+          <th colspan="2" class="text-center">South</th>
+        </tr>
+        <tr>
+          <th class="text-center border-right" width="13%">Thru lanes</th>
+          <th class="text-center border-right" width="12%">Left turn</th>
+          <th class="text-center border-right" width="13%">Thru lanes</th>
+          <th class="text-center border-right" width="12%">Left turn</th>
+          <th class="text-center border-right" width="13%">Thru lanes</th>
+          <th class="text-center border-right" width="12%">Left turn</th>
+          <th class="text-center border-right" width="13%">Thru lanes</th>
+          <th class="text-center">Left turn</th>
+        </tr>
+        <tr class="traffic-light">
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="trafficlight.js"></script>
+</html>
