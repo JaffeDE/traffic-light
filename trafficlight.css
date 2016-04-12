@@ -34,3 +34,7 @@ button {
 	border-bottom: 1px solid gray;
 	padding: 20px;
 }
+
+.footnote {
+	font-size: 0.8em;
+}
